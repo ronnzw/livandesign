@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<div class="portfolio-img text-center align-content-center text-white mb-5">
+    <h1 class="page-text text-gold text-uppercase display-4">Our Portfolio</h1>
+</div>
+
+<div class="container">
+    <h2 class="mb-5 text-center text-white animate__animated animate__bounce">Enjoy <span style="font-family: cursive;">some</span> of our <span style="font-family: cursive;">finest</span> work </h2>
+</div>
+
+<div class="container">
+    <h3 class="mb-4 mt-5 text-white gradient-text text-uppercase">Architecture</h3>
+
+    <div class="row">
+        <div class="col-md-4">
+            <a href="{% url 'gym' %}">
+            <div class="card mb-3">
+                <img src="{% static 'img/gym1.JPG' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-center text-uppercase">Active Gym</h4>
+                </div>
+            </div>
+            </a>
+        </div>
+
+
+        <div class="col-md-4">
+            <a href="{% url 'bvumba' %}">
+            <div class="card mb-3">
+                <img src="{% static 'img/IMG_0010.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-center text-uppercase">Bvumba</h4>
+                </div>
+            </div>
+            </a>
+        </div>
+
+
+        <div class="col-md-4">
+            <a href="{% url 'chisipite' %}">
+            <div class="card mb-3">
+                <img src="{% static 'img/IMG_6170.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-center text-uppercase">Chisipite</h4>
+
+                </div>
+            </div>
+        </a>
+        </div>
+
+
+
+        <div class="col-md-4">
+            <a href="{% url 'grange' %}">
+            <div class="card mb-3">
+                <img src="{% static 'img/grange4.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-center text-uppercase">The Grange</h4>
+                </div>
+            </div>
+            </a>
+        </div>
+
+
+        <div class="col-md-4">
+            <a href="{% url 'brooke' %}">
+            <div class="card mb-3">
+                <img src="{% static 'img/bbrooke2.JPG' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-center text-uppercase">Borrowdale Brooke</h4>
+                </div>
+            </div>
+            </a>
+        </div>
+
+
+        <div class="col-md-4">
+            <a href="{% url 'hogerty' %}">
+            <div class="card mb-3">
+                <img src="{% static 'img/HogertyHill4.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-center text-uppercase">Hogerty Hill</h4>
+                </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="col-md-4">
+            <a href="{% url 'marlbo' %}">
+            <div class="card mb-3">
+                <img src="{% static 'img/MalboroughClusters2.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-center text-uppercase">Malborough Clusters</h4>
+                </div>
+            </div>
+            </a>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+<div class="container">
+    <h3 class="mb-5 mt-5 text-white gradient-text text-uppercase">Project management</h3>
+    <marquee behavior="scroll" direction="left" class="text-white text-uppercase">We also specialise in Project Management.</marquee>
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <a href="{% url 'carrick' %}">
+            <div class="card mb-3">
+                <img src="{% static 'img/Carrick.jpg' %}" class="card-img-top" alt="img">
+                <div class="card-body">
+                  <h5 class="card-title text-center text-uppercase">Carrick Creagh Project Management</h5>
+                </div>
+            </div>
+            </a>
+        </div>
+
+
+        <div class="col-md-4">
+            <a href="{% url 'brooke' %}">
+            <div class="card mb-3">
+                <img src="{% static 'img/brooke.jpg' %}" class="card-img-top" alt="img">
+                <div class="card-body">
+                  <h5 class="card-title text-center text-uppercase">Brooke Project Management</h5>
+                </div>
+            </div>
+            </a>
+        </div>
+
+
+        <div class="col-md-4">
+            <a href="{% url 'marlbo' %}">
+            <div class="card mb-3">
+                <img src="{% static 'img/Marlborough.jpg' %}" class="card-img-top" alt="img">
+                <div class="card-body">
+                  <h5 class="card-title text-center text-uppercase">Marlborough Project Management</h5>
+
+                </div>
+            </div>
+            </a>
+        </div>
+
+        
+    </div>
+</div>
+{% endblock content%}

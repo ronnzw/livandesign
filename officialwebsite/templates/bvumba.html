@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'img/IMG_5236.jpg' %}" class="d-block carousel-img" alt="img">
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'img/IMG_5209.jpg' %}" class="d-block carousel-img" alt="img">
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'img/IMG_5051.jpg' %}" class="carousel-img d-block" alt="img">
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'img/IMG_5248.jpg' %}" class="carousel-img d-block" alt="img">
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'img/IMG_0054.jpg' %}" class="carousel-img d-block" alt="img">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <div class="container mt-4 mb-4">
+    <div class="row">
+        <div class="col-md-6 text-white">
+            <h1 class="text-white">Bvumba</h1>
+            <p> Nestled between the slopes of Bvumba mountains and lush greenery is an architectural marvel of contemporary design. This home, which embraces the grandeur of nature's beauty, offers a lifestyle that appreciates modernism, nature, and the art of living well. It is more than just a place to live.</p>
+ 
+            <p>This home is a visionary achievement, a brainchild of LIVAN DESIGN INNOVATION and CHRISTA ELLA INTERIORS. It combines the crisp lines of SCANDINAVIAN design with the rustic charm of a farmland.</p>
+ 
+<p>The house comprises of two spectacular levels, overlooking Mozambique and the mountains in the distance, featuring panoramic views that encapsulate the essence of its breathtaking surroundings, creating a picturesque backdrop.</p>
+ 
+<p>The expansive SCANDANAVIAN interior, where space breathes and natural light dances across opulent finishes, embraces you as soon as you step through the large pivot door. From the welcoming expanse of the entrance hall anchored by an elegant floating staircase, to the home office with a roof skylight to flood the space with light, the main floor unfolds in a seamless flow of living spaces, each cozier than the last.</p>
+ 
+<p>The kitchen, featuring a magnificent island counter and a lavish dining area awaiting family feasts and lively soirees is a testament to functional beauty and the joy of shared meals</p>
+ 
+<p>The private bedrooms offer a serene atmosphere, with each ensuite bedroom, including the opulent master suite offering access to the garden and presenting unrivaled views of the lush grounds, pool, and mountains.</p>
+ 
+<p>The outdoors is an adventure in itself, with a foot path for exploration, terraced lawns for play, and monkeys roaming the woods. The patio extends the warmth of the indoors to an al-fresco haven. Here, culinary magic happens with a built-in pizza oven and braai area. The eastern living area, with its expansive windows, offers a tranquil haven for reflection or social gatherings by the bar and swimming pool.</p>
+ 
+        </div>
+        <div class="col-md-6 text-white">
+            <div class="card mb-3">
+                <img src="{% static 'img/IMG_5264.jpg' %}" class="card-img-top" alt="...">
+            </div>
+            <div>
+              <p>Sustainability is at the home's core, featuring a water storage, and filtration systems for river waters, as well as energy-efficient heating for both the residence and the pool. The smart home automation and state-of-the-art security ensure peace of mind in this tranquil sanctuary.</p>
+ 
+              <p>As dusk settles, the series of uncovered patios transforms into a stage for nature's symphony, inviting you to indulge in the ritual of sundowners by the fire pit or alongside the pool, which seems to capture the very essence of a BVUMBA sunset.</p>
+               
+              <p>In summary, this home is not just a living space but also a celebration of life's finest offerings. It promises not only a luxurious abode but a canvas where memories will be CREATED for years to come.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-white mt-5 mb-5">
+        <h3>Contact Us</h3>
+        <p><span class="fw-bold">Email:</span> info@livandesigninnov.co.zw <br>
+            <span class="fw-bold">Phone number: </span> +263 782 995614
+         </p>
+    </div>
+  </div>
+
+{% endblock content %}

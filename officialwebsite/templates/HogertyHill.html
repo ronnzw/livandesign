@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'img/HogertyHill1.jpg' %}" class="d-block carousel-img" alt="img">
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'img/HogertyHill2.jpg' %}" class="d-block carousel-img" alt="img">
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'img/HogertyHill3.jpg' %}" class="carousel-img d-block" alt="img">
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'img/HogertyHill4.jpg' %}" class="carousel-img d-block" alt="img">
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'img/HogertyHill5.jpg' %}" class="carousel-img d-block" alt="img">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-6 text-white">
+            <h1 class="text-white">Hogerty Hill</h1>
+            <p>The Horgerty Hill mansion embodies comfort, luxury, and usefulness in a modern architectural environment. As soon as you pull into the driveway, the water feature next to the entryway catches your attention. 
+            </p>
+
+            <p>The layout of the home honors the view while maximizing the amount of natural light. Large glass sliding doors provide nearly every room in the house direct access to the vistas, while high-level windows and double-volume living areas give the impression of expanse. 
+                This house has an entertainment space with a grill and pool at the back that promotes outdoor living and leisure. Because of the way it is built, even the darkest corners of the house are filled with natural light, making it aesthetically pleasing.
+                </p>
+        </div>
+        <div class="col-md-6 text-white">
+            <div class="card mb-3">
+                <img src="{% static 'img/HogertyHill7.jpg' %}" class="card-img-top" alt="img">
+            </div>
+        </div>
+    </div>
+
+    <div class="text-white mt-5 mb-5">
+        <h3>Contact Us</h3>
+        <p><span class="fw-bold">Email:</span> info@livandesigninnov.co.zw <br>
+            <span class="fw-bold">Phone number: </span> +263 782 995614
+         </p>
+    </div>
+  </div>
+
+{% endblock content %}

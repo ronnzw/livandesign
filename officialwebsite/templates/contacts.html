@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% crispy form example_form.helper %}
+
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4841.684536773474!2d31.041575808773576!3d-17.805577295769478!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a5003cb45e95%3A0x1d3b76ec3d068c!2sLivan%20Design%20Innovations%20pvt%20Limited!5e0!3m2!1sen!2szw!4v1725445221676!5m2!1sen!2szw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+            <div class="d-flex gap-4 mt-2 align-items-center">
+                <i class="bi bi-card-heading" style="color:lightgrey"></i>
+
+                <p style="color:lightgrey">Livan Design Innovation  
+                </p>
+
+            </div>
+
+            <div class="d-flex gap-4 align-items-center">
+                <i class="bi bi-building" style="color:lightgrey"></i>
+                <p style="color:lightgrey">
+                    Unit 10 , Thompson building <br>  
+                    17 Phillips Ave, Belgravia<br>
+                    Harare, Zimbabwe
+                </p>
+            </div>
+
+
+            <div class="d-flex gap-4">
+                <i class="bi bi-envelope" style="color:lightgrey"></i>
+                <p style="color:lightgrey">
+                    info@livandesigninnov.co.zw
+                </p>
+            </div>
+
+            <div class="d-flex gap-4">
+                <i class="bi bi-phone" style="color:lightgrey"></i>
+                <p style="color:lightgrey">
+                    +263782 995 614
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            {% csrf_token %}
+            {% crispy form %}
+        </div>
+    </div>
+</div>
+{% endblock content%}
